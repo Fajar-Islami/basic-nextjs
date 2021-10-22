@@ -1,22 +1,10 @@
 import type { NextPage } from "next";
-import Link from "next/link";
+import Header from "../components/Header";
 
 const Home: NextPage = () => {
   return (
     <>
-      <header>
-        <ul>
-          <li>
-            <Link href="/">Home </Link>
-          </li>
-          <li>
-            <Link href="/Blog">Blog</Link>
-          </li>
-          <li>
-            <Link href="/users">User</Link>
-          </li>
-        </ul>
-      </header>
+      <Header />
       <h1>Welcome ahmad fajar</h1>
     </>
   );
