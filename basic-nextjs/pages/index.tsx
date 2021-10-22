@@ -1,14 +1,17 @@
 import type { NextPage } from "next";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Head from "next/head";
+import Layout from "../components/Layout";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
   return (
     <>
-      <Header />
-      <h1 className={styles["title-homepage"]}>Welcome ahmad fajar</h1>
-      <Footer />
+      <Head>
+        <title>NextJS Basic | Home Page</title>
+      </Head>
+      <Layout>
+        <h1 className={styles["title-homepage"]}>Welcome ahmad fajar</h1>
+      </Layout>
     </>
   );
 };
