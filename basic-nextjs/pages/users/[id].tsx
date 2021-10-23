@@ -42,7 +42,9 @@ export async function getStaticPaths() {
 
   return {
     paths,
-    fallback: true,
+    fallback: false,
+    // fallback true, bisa mengakibatkan build error, karena akan selalu provide/ menunggu jika url tidak ditemukan
+    // fallback false, kalau url tidak ditemukan maka dialihkan ke 404 page
   };
 }
 
